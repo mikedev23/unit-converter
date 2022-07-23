@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit Converter</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="https://img.icons8.com/office/452/code.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="sub-container">
+                <header>Metric/Imperial Unit Conversion</header>
+                <div class="num-container">
+                    <input
+                        type="text"
+                        maxlength="3"
+                        class="number"
+                        name="number"
+                        placeholder="0"
+                        onfocus="this.placeholder=''"
+                    >
+                </div>
+                <button class="btn-container">
+                    <p class="btn-text">Convert</p>
+                </button>
+            </div>
+            <div class="card-one">
+                <div class="conversion-result">
+                    <p style="color: rgb(250, 195, 148)">Length (Meters/Feet)</p>
+                    <p class="card-one-text">0</p>
+                </div>
+            </div>
+            <div class="card-two">
+                <div class="conversion-result">
+                    <p style="color: palegreen">Volume (Liters/Gallons)</p>
+                    <p class="card-two-text">0</p>
+                </div>
+            </div>
+            <div class="card-three">
+                <div class="conversion-result">
+                    <p style="color: rgb(241, 232, 141)">Mass (Kilograms/Pounds)</p>
+                    <p class="card-three-text">0</p>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
